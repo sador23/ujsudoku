@@ -44,7 +44,6 @@ def startscreen():
        \n If you want to know more about the RULES, please enter: rules! 
        \n If you want to PLAY the game, please enter: play!
        \n If you want to EXIT from the game, please enter: exit!''') 
-       start=start.lower()
        if start=="play":
            return
        if start=="rules":
@@ -55,6 +54,10 @@ def startscreen():
            continue
        if start=="exit":
            quit()
+
+def gamechooser()
+    
+    random.randint(games)
 
 def finish():
     answer=input('Done? Enter yes or no!')
@@ -103,6 +106,7 @@ def initialize():
         for j in range(0,9):
             if table[i][j]==0:
                 table[i][j]="."
+
     draw()
    
 def userinput(rowcolnum):
@@ -171,4 +175,4 @@ def refresh():
 '''Program starts here'''
 clear()
 startscreen()
-initialize()
+gamechooser()
